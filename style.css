@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.player-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#current-player {
+    color: #d32f2f;
+}
+
+#new-game, #undo {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+#new-game:hover, #undo:hover {
+    background-color: #a0522d;
+}
+
+#undo {
+    background-color: #666;
+}
+
+#undo:hover {
+    background-color: #555;
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#chess-board {
+    border: 3px solid #8b4513;
+    background-color: #f5deb3;
+    cursor: pointer;
+}
+
+.captured-pieces {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.captured {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-height: 80px;
+}
+
+.captured h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.red-captured h3 {
+    color: #d32f2f;
+}
+
+.black-captured h3 {
+    color: #333;
+}
+
+#red-captured-pieces,
+#black-captured-pieces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.captured-piece {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Chess - Xiangqi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Chinese Chess (象棋)</h1>
+        <div class="game-info">
+            <div class="player-info">
+                <span id="current-player">Red's Turn</span>
+            </div>
+            <button id="new-game">New Game</button>
+            <button id="undo">Undo</button>
+        </div>
+        <div class="board-container">
+            <canvas id="chess-board" width="520" height="576"></canvas>
+        </div>
+        <div class="captured-pieces">
+            <div class="captured red-captured">
+                <h3>Black Captured:</h3>
+                <div id="red-captured-pieces"></div>
+            </div>
+            <div class="captured black-captured">
+                <h3>Red Captured:</h3>
+                <div id="black-captured-pieces"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
